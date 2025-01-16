@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backg {
+    background-image: url(d180.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7px 7px 7px 7px;
+    background-color: rgba(202, 180, 180, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(32, 25, 25, 0.6); 
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 110px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.table-container {
+    padding: 15px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 6px rgba(172, 171, 171, 0.9); 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: rgba(156, 140, 140, 0.6); /* Transparansi header */
+    color: #ffffff;
+}
+
+th{
+    padding: 12px 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Border transparan */
+}
+td{
+    text-align: left;
+    padding: 12px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.9); /* Border transparan */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparansi untuk baris genap */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Transparansi saat di-hover */
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
